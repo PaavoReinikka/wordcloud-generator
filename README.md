@@ -17,9 +17,6 @@ This project uses [uv](https://github.com/astral-sh/uv) for dependency managemen
 ```bash
 # Install dependencies
 uv sync
-
-# Or install with pip
-pip install -r requirements.txt
 ```
 
 ### Dependencies
