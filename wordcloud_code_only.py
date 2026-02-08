@@ -138,20 +138,20 @@ def main():
         wordcloud = WordCloud(
             width=1600, 
             height=1600, 
-            background_color='black',
+            background_color='#272822',
             max_words=200, 
-            colormap='twilight',
+            colormap='Set2',
             relative_scaling=0.5,
             min_font_size=10
         ).generate_from_frequencies(filtered_counts)
         
         output_file = os.path.join(script_dir, 'images', 'wordcloud_code_only.png')
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
-        plt.figure(figsize=(16, 16))
+        plt.figure(figsize=(16, 16), facecolor='#272822')
         plt.imshow(wordcloud, interpolation='bilinear')
         plt.axis('off')
         plt.tight_layout(pad=0)
-        plt.savefig(output_file, dpi=150, bbox_inches='tight')
+        plt.savefig(output_file, dpi=150, bbox_inches='tight', facecolor='#272822', edgecolor='none')
         print(f"\n✓ Wordcloud saved to {output_file}")
         
     except ImportError:
