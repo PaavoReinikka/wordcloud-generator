@@ -1,0 +1,39 @@
+# Exclude patterns for wordcloud generation
+# One pattern per line - supports directory names, file names, or glob patterns
+
+# Virtual environments
+venv
+.venv
+env
+node_modules
+
+# Version control
+.git
+.svn
+.hg
+
+# Build artifacts
+__pycache__
+dist
+build
+target
+out
+bin
+obj
+
+# IDE/Editor
+.vscode
+.idea
+*.swp
+*.swo
+
+# Package managers
+.npm
+.yarn
+
+# Compiled files
+*.pyc
+*.pyo
+*.so
+*.dll
+*.exe
