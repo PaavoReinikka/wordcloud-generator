@@ -243,9 +243,9 @@ def main():
         wordcloud = WordCloud(
             width=1600,
             height=1600,
-            background_color="white",
+            background_color="black",
             max_words=200,
-            colormap="viridis",
+            colormap="cool",
             relative_scaling=0.5,
             min_font_size=10,
         ).generate_from_frequencies(filtered_counts)

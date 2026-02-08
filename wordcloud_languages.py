@@ -153,8 +153,8 @@ def main():
         wordcloud = WordCloud(
             width=1600, 
             height=1600, 
-            background_color='white',
-            colormap='Set1',
+            background_color='black',
+            colormap='rainbow',
             relative_scaling=0.5,
             min_font_size=12,
             max_words=50

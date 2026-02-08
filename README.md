@@ -98,9 +98,9 @@ Each script can be customized by editing the following parameters in the source:
 
 **Wordcloud parameters:**
 - `width` / `height` - Image dimensions
-- `background_color` - Background color
+- `background_color` - Background color (default: 'black')
 - `max_words` - Maximum number of words to display
-- `colormap` - Color scheme (e.g., 'viridis', 'plasma', 'Set1')
+- `colormap` - Color scheme (e.g., 'cool', 'twilight', 'rainbow')
 - `relative_scaling` - Font size scaling
 - `min_font_size` - Minimum font size
 
