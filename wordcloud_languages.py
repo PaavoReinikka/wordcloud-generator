@@ -152,7 +152,7 @@ def main():
         # Create wordcloud from language frequencies
         wordcloud = WordCloud(
             width=1600, 
-            height=800, 
+            height=1600, 
             background_color='white',
             colormap='Set1',
             relative_scaling=0.5,
@@ -162,7 +162,7 @@ def main():
         
         output_file = os.path.join(script_dir, 'images', 'wordcloud_languages.png')
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
-        plt.figure(figsize=(20, 10))
+        plt.figure(figsize=(16, 16))
         plt.imshow(wordcloud, interpolation='bilinear')
         plt.axis('off')
         plt.title('Language Distribution', fontsize=24, pad=20)

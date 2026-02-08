@@ -137,7 +137,7 @@ def main():
         
         wordcloud = WordCloud(
             width=1600, 
-            height=800, 
+            height=1600, 
             background_color='white',
             max_words=200, 
             colormap='plasma',
@@ -147,7 +147,7 @@ def main():
         
         output_file = os.path.join(script_dir, 'images', 'wordcloud_code_only.png')
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
-        plt.figure(figsize=(20, 10))
+        plt.figure(figsize=(16, 16))
         plt.imshow(wordcloud, interpolation='bilinear')
         plt.axis('off')
         plt.tight_layout(pad=0)

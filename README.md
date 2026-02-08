@@ -127,7 +127,7 @@ wordcloud-generator/
 
 ## Output
 
-All wordclouds are saved to the `images/` directory with 1600x800 resolution at 150 DPI.
+All wordclouds are saved to the `images/` directory as 1600x1600 square images at 150 DPI.
 
 ## Notes
 
